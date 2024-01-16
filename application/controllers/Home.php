@@ -20,16 +20,15 @@ class Home extends CI_Controller
         $data['title'] = 'Dashboard';
         $data['user'] = $this->db->get_where('user', ['id' => $this->session->userdata('user_id')])->row_array();
 
-        $data['grafik'] = $this->dashboard->getMainGraph();
-        $data['TotalDaftar'] = $this->dashboard->getTotalDaftar(); //single array
-        $data['TotalDpt'] = $this->dashboard->getTotalDpt(); //array banyak
-        $data['pencapaian'] = $this->dashboard->getPencapaian(); //array banyak
-        $data['dtdc'] = $this->dashboard->getLksDtdc(); //array banyak
-        // $data['maingraph'] = $this->dashboard->mainGraph();
-        // $data['graphpanakukkang'] = $this->dashboard->graphPanakukkang();
+        $data['panakkukang'] = $this->dashboard->getKelTps('737109');
+        $data['biringkanaya'] = $this->dashboard->getKelTps('737111');
+        $data['manggala'] = $this->dashboard->getKelTps('737112');
+        $data['tamalanrea'] = $this->dashboard->getKelTps('737114');
         $this->load->view('templates/header', $data);
         $this->load->view('templates/topbar', $data);
         $this->load->view('home/index', $data);
         $this->load->view('templates/footer');
     }
+
+    
 }
