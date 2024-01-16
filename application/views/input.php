@@ -113,10 +113,10 @@
                                 <div class="card-footer">
                                     <div class="row">
 
-                                        <div class="col-sm-6 d-flex justify-content-center">
+                                        <div class="col-sm-6 d-flex justify-content-center mt-3 mb-3">
                                             <a href="<?= base_url(); ?>" class="btn btn-secondary">Close</a>
                                         </div>
-                                        <div class="col-sm-6 d-flex justify-content-center">
+                                        <div class="col-sm-6 d-flex justify-content-center mt-3 mb-3">
                                             <button type="submit" class="btn btn-primary">Save</button>
                                         </div>
                                     </div>
