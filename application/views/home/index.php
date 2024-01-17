@@ -42,7 +42,8 @@
                                                 <div class="progress progress-xs progress-striped active">
                                                     <div class="progress-bar bg-primary" style="width: <?= ($p['input'] / $p['tps']) * 100 ?>%"></div>
                                                 </div>
-                                                <span class="badge <?= ($p['input'] == $p['tps']) ? 'bg-success' : ''; ?>"><?= $p['input']; ?>/<?= $p['tps']; ?></span>
+
+                                                <span class="badge <?= ($p['input'] == $p['tps']) ? 'bg-success' : ''; ?>"><?= $p['input']; ?>/<?= $p['tps']; ?> (<?= number_format(($p['input'] / $p['tps']) * 100, 1) ?>%)</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -70,7 +71,10 @@
                                                 <div class="progress progress-xs progress-striped active">
                                                     <div class="progress-bar bg-primary" style="width: <?= ($b['input'] / $b['tps']) * 100 ?>%"></div>
                                                 </div>
-                                                <span class="badge <?= ($b['input'] == $b['tps']) ? 'bg-success' : ''; ?>"><?= $b['input']; ?>/<?= $b['tps']; ?></span>
+                                                <span class="badge <?= ($b['input'] == $b['tps']) ? 'bg-success' : ''; ?>">
+                                                    <?= $b['input']; ?>/<?= $b['tps']; ?>
+                                                    (<?= number_format(($b['input'] / $b['tps']) * 100, 1) ?>%)
+                                                </span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -98,7 +102,10 @@
                                                 <div class="progress progress-xs progress-striped active">
                                                     <div class="progress-bar bg-primary" style="width: <?= ($m['input'] / $m['tps']) * 100 ?>%"></div>
                                                 </div>
-                                                <span class="badge <?= ($m['input'] == $m['tps']) ? 'bg-success' : ''; ?>"><?= $m['input']; ?>/<?= $m['tps']; ?></span>
+                                                <span class="badge <?= ($m['input'] == $m['tps']) ? 'bg-success' : ''; ?>">
+                                                    <?= $m['input']; ?>/<?= $m['tps']; ?>
+                                                    (<?= number_format(($m['input'] / $m['tps']) * 100, 1) ?>%)
+                                                </span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -126,7 +133,10 @@
                                                 <div class="progress progress-xs progress-striped active">
                                                     <div class="progress-bar bg-primary" style="width: <?= ($t['input'] / $t['tps']) * 100 ?>%"></div>
                                                 </div>
-                                                <span class="badge <?= ($t['input'] == $t['tps']) ? 'bg-success' : ''; ?>"><?= $t['input']; ?>/<?= $t['tps']; ?></span>
+                                                <span class="badge <?= ($t['input'] == $t['tps']) ? 'bg-success' : ''; ?>">
+                                                    <?= $t['input']; ?>/<?= $t['tps']; ?>
+                                                    (<?= number_format(($t['input'] / $t['tps']) * 100, 1) ?>%)
+                                                </span>
                                             </td>
                                         </tr>
                                     </tbody>
