@@ -114,7 +114,7 @@
                                     <div class="row">
 
                                         <div class="col-sm-6 d-flex justify-content-center mt-3 mb-3">
-                                            <a href="<?= base_url(); ?>" class="btn btn-secondary">Close</a>
+                                            <a href="<?= base_url(); ?>" class="btn btn-secondary">Cancel</a>
                                         </div>
                                         <div class="col-sm-6 d-flex justify-content-center mt-3 mb-3">
                                             <button type="submit" class="btn btn-primary">Save</button>
