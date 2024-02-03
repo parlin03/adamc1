@@ -55,58 +55,58 @@
                                     <div class="form-group row">
                                         <label for="jml_suara0" class="col-sm-9 col-form-label">Suara Partai</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="jml_suara0" name="jml_suara0">
+                                            <input type="text" class="form-control" id="jml_suara0" onkeyup="sum();" name="jml_suara0">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara1" class="col-sm-9 col-form-label">1. H. ADAM MUHAMMAD, ST, M.SI</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="jml_suara1" name="jml_suara1">
+                                            <input type="text" class="form-control" id="jml_suara1" onkeyup="sum();" name="jml_suara1">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara2" class="col-sm-9 col-form-label">2. A M IRWAN PATAWARI, S.Si</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="jml_suara2" name="jml_suara2">
+                                            <input type="text" class="form-control" id="jml_suara2" onkeyup="sum();" name="jml_suara2">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara3" class="col-sm-9 col-form-label">3. Hj. NURIMBAYANI DASSIR, S.S</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="jml_suara3" name="jml_suara3">
+                                            <input type="text" class="form-control" id="jml_suara3" onkeyup="sum();" name="jml_suara3">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara4" class="col-sm-9 col-form-label">4. HENRY BATARA</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="jml_suara4" name="jml_suara4">
+                                            <input type="text" class="form-control" id="jml_suara4" onkeyup="sum();" name="jml_suara4">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara5" class="col-sm-9 col-form-label">5. RESKI AMELIA, S. Farm</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="jml_suara5" name="jml_suara5">
+                                            <input type="text" class="form-control" id="jml_suara5" onkeyup="sum();" name="jml_suara5">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara6" class="col-sm-9 col-form-label">6. Dr. SYAMSUDDIN NUR, SH, MH, CPM</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="jml_suara6" name="jml_suara6">
+                                            <input type="text" class="form-control" id="jml_suara6" onkeyup="sum();" name="jml_suara6">
                                         </div>
                                     </div>
                                     <hr>
                                     <div class="form-group row">
-                                        <label for="jml_sah" class="col-sm-9 col-form-label">Suara Sah</label>
+                                        <label for="jml_sah" class="col-sm-9 col-form-label">Jumlah Suara</label>
                                         <div class="col-sm-3">
                                             <input type="text" class="form-control" id="jml_sah" name="jml_sah">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
+                                    <!-- <div class="form-group row">
                                         <label for="jml_rusak" class="col-sm-9 col-form-label">Suara Tidak Sah</label>
                                         <div class="col-sm-3">
                                             <input type="text" class="form-control" id="jml_rusak" name="jml_rusak">
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <!-- /card-body -->
 
@@ -134,3 +134,21 @@
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+<script>
+    function sum() {
+        var jmlSuara0 = document.getElementById('jml_suara0').value;
+        var jmlSuara1 = document.getElementById('jml_suara1').value;
+        var jmlSuara2 = document.getElementById('jml_suara2').value;
+        var jmlSuara3 = document.getElementById('jml_suara3').value;
+        var jmlSuara4 = document.getElementById('jml_suara4').value;
+        var jmlSuara5 = document.getElementById('jml_suara5').value;
+        var jmlSuara6 = document.getElementById('jml_suara6').value;
+        var result = parseInt(jmlSuara0) + parseInt(jmlSuara1) +
+            parseInt(jmlSuara2) + parseInt(jmlSuara3) + parseInt(jmlSuara4) +
+            parseInt(jmlSuara5) + parseInt(jmlSuara6);
+        if (!isNaN(result)) {
+            document.getElementById('jml_sah').value = result;
+        }
+    }
+</script>
