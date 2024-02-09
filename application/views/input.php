@@ -53,43 +53,43 @@
                                     <div class="form-group row">
                                         <label for="jml_suara0" class="col-sm-9 col-form-label">Suara Partai</label>
                                         <div class="col-sm-3">
-                                            <input type="number" class="form-control" id="jml_suara0" onkeyup="sum();" name="jml_suara0" required>
+                                            <input type="number" class="form-control" id="jml_suara0" onkeyup="sum();" onmouseup="sum();" name="jml_suara0" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara1" class="col-sm-9 col-form-label">1. H. ADAM MUHAMMAD, ST, M.SI</label>
                                         <div class="col-sm-3">
-                                            <input type="number" class="form-control" id="jml_suara1" onkeyup="sum();" name="jml_suara1" required>
+                                            <input type="number" class="form-control" id="jml_suara1" onkeyup="sum();" onmouseup="sum();" name="jml_suara1" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara2" class="col-sm-9 col-form-label">2. A M IRWAN PATAWARI, S.Si</label>
                                         <div class="col-sm-3">
-                                            <input type="number" class="form-control" id="jml_suara2" onkeyup="sum();" name="jml_suara2" required>
+                                            <input type="number" class="form-control" id="jml_suara2" onkeyup="sum();" onmouseup="sum();" name="jml_suara2" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara3" class="col-sm-9 col-form-label">3. Hj. NURIMBAYANI DASSIR, S.S</label>
                                         <div class="col-sm-3">
-                                            <input type="number" class="form-control" id="jml_suara3" onkeyup="sum();" name="jml_suara3" required>
+                                            <input type="number" class="form-control" id="jml_suara3" onkeyup="sum();" onmouseup="sum();" name="jml_suara3" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara4" class="col-sm-9 col-form-label">4. HENRY BATARA</label>
                                         <div class="col-sm-3">
-                                            <input type="number" class="form-control" id="jml_suara4" onkeyup="sum();" name="jml_suara4" required>
+                                            <input type="number" class="form-control" id="jml_suara4" onkeyup="sum();" onmouseup="sum();" name="jml_suara4" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara5" class="col-sm-9 col-form-label">5. RESKI AMELIA, S. Farm</label>
                                         <div class="col-sm-3">
-                                            <input type="number" class="form-control" id="jml_suara5" onkeyup="sum();" name="jml_suara5" required>
+                                            <input type="number" class="form-control" id="jml_suara5" onkeyup="sum();" onmouseup="sum();" name="jml_suara5" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="jml_suara6" class="col-sm-9 col-form-label">6. Dr. SYAMSUDDIN NUR, SH, MH, CPM</label>
                                         <div class="col-sm-3">
-                                            <input type="number" class="form-control" id="jml_suara6" onkeyup="sum();" name="jml_suara6" required>
+                                            <input type="number" class="form-control" id="jml_suara6" onkeyup="sum();" onmouseup="sum();" name="jml_suara6" required>
                                         </div>
                                     </div>
                                     <hr>
