@@ -20,7 +20,7 @@
                 $days_remaining = floor($remaining / 86400);
                 $hours_remaining = floor(($remaining % 86400) / 3600);
                 ?>
-           <-- <li class="nav-item text-danger">
+           <!-- <li class="nav-item text-danger">
                 <h3> <b><?= $days_remaining; ?></b> hari lagi..!!!</h3>
              </li> -->
              <li class="nav-item dropdown">
